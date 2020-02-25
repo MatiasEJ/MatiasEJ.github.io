@@ -759,8 +759,9 @@
 			}
 
 			&.one {
-				background-color: #81918E;
-				background-image: url('../../images/banner.jpg');
+
+				background-color: linear-gradient(to right, black 0%, white 100%);
+				// background-image: url('../../images/banner.jpg');
 			}
 
 			&.two {
