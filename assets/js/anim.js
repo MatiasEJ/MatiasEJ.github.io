@@ -49,7 +49,7 @@ function Particle(x,y,directionX,directionY,size,colour) {
 Particle.prototype.draw = function(){
     ctx.beginPath();
   
-    ctx.strokeRect(this.x,this.y, this.size, this.size)
+    ctx.rect(this.x,this.y, this.size, this.size)
    
     // // ctx.arc(this.x,this.y,this.size,0,Math.PI*2,false); 
     // ctx.moveTo(this.x, this.y);
@@ -57,15 +57,15 @@ Particle.prototype.draw = function(){
 
 
     ctx.fillStyle= this.colour;
-    var gradient = ctx.createLinearGradient(50, 0, 170, 0);
-    gradient.addColorStop("0.5", "#F44336");
-    gradient.addColorStop("0.5" ,"#880E4F");
-    gradient.addColorStop("0.75", "white");
+    // var gradient = ctx.createLinearGradient(50, 0, 170, 0);
+    // gradient.addColorStop("0.5", "#F44336");
+    // gradient.addColorStop("0.5" ,"#880E4F");
+    // gradient.addColorStop("0.75", "white");
     
-    ctx.fill();
+    // ctx.fill();
    
-    ctx.lineWidth = '.4';
-    ctx.strokeStyle = gradient;
+    ctx.lineWidth = '.5';
+    // ctx.strokeStyle = gradient;
     
     ctx.stroke();
 
