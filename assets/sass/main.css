@@ -2374,4 +2374,14 @@ button:active,
   text-align: left;
   list-style-type: square;
 }
+
+
+.intereses{
+  color:#ff3838;
+  padding: 2em 0;
+}
+.intereses a{
+  font-size: 1.5em;
+    border-bottom-style: none;
+}
 /*# sourceMappingURL=main.css.map */

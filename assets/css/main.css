@@ -2648,4 +2648,8 @@ input, select, textarea {
 		text-align: left;
 		list-style-type: square;
 	}
-	
+
+
+.intereses{
+	color: red;
+}
