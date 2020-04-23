@@ -29,7 +29,6 @@ window.addEventListener('mousemove',
     function(event){
         mouse.x = event.x;
         mouse.y = event.y;
-        console.log(mouse)
     }
 )
 
@@ -49,9 +48,9 @@ function Particle(x,y,directionX,directionY,size,colour) {
 Particle.prototype.draw = function(){
     ctx.beginPath();
   
-    ctx.rect(this.x,this.y, this.size, this.size)
+    // ctx.rect(this.x,this.y, this.size, this.size)
    
-    // // ctx.arc(this.x,this.y,this.size,0,Math.PI*2,false); 
+    ctx.arc(this.x,this.y,this.size,0,Math.PI*2,false); 
     // ctx.moveTo(this.x, this.y);
     // ctx.quadraticCurveTo(20,80, 500,100);
 
@@ -62,7 +61,7 @@ Particle.prototype.draw = function(){
     // gradient.addColorStop("0.5" ,"#880E4F");
     // gradient.addColorStop("0.75", "white");
     
-    // ctx.fill();
+    ctx.fill();
    
     ctx.lineWidth = '.5';
     // ctx.strokeStyle = gradient;
