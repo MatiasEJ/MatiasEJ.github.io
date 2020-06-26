@@ -28,7 +28,7 @@ images.sonicReverse.src = '/assets/js/sonic3-reverse.png';
 images.sonic.src = '/assets/js/sonic3.png'
 
 //'upRight', 'right', 'up', 'jump', 'downRight', 'left'
-const characterActions = ['right', 'left']
+const characterActions = ['right']
 
 const charHeight = 113;
 const charWidth = 103;
