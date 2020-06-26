@@ -27,8 +27,8 @@ images.sonicReverse = new Image();
 images.sonicReverse.src = '/assets/js/sonic3-reverse.png';
 images.sonic.src = '/assets/js/sonic3.png'
 
-const characterActions = ['right']
 //'upRight', 'right', 'up', 'jump', 'downRight', 'left'
+const characterActions = ['right', 'left']
 
 const charHeight = 113;
 const charWidth = 103;
@@ -156,10 +156,7 @@ const characters = [];
 //         this.y -= this.speed;
 //       }
 //     }
-
-
 //   }
-
 // }
 
 class Sonic {
@@ -240,8 +237,8 @@ class Sonic {
 //NUMBER OF CHARS
 // for (i = 0; i < numberOfCharacter; i++) {
 //   characters.push(new Sonic());
-
 // }
+
 characters.push(new Sonic());
 //DIBUJO DEL SPRITE
 function drawSprite(img, sX, sY, sW, sH, dX, dY, dW, dH) {
@@ -252,7 +249,7 @@ function drawSprite(img, sX, sY, sW, sH, dX, dY, dW, dH) {
 //DUH
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+  //CANTIDAD DE CHARACTERS
   // for (i = 0; i < characters.length; i++) {
   //     characters[i].draw();
   //     characters[i].update();
@@ -263,7 +260,7 @@ function animate() {
 }
 
 
-//EXTRAS
+//EXTRAS (Problemas de optimización)
 function mirror() {
   ctx.translate(canvas.width, 0);
   ctx.scale(-1, 1);
