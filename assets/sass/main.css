@@ -24,6 +24,10 @@ section, summary, time, mark, audio, video {
   vertical-align: baseline;
 }
 
+video {
+  width: 100%;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -141,7 +145,6 @@ h3 {
 
 header {
   margin: 0 0 2em 0;
-
 }
 
 header > p {
@@ -1880,7 +1883,7 @@ button:active,
 }
 
 #header .bottom > :last-child {
-  margin-bottom: 15;
+  margin-bottom: 0;
 }
 
 #header .icons {
@@ -2080,11 +2083,7 @@ button:active,
 }
 
 #main > section.one {
-  
-  /* background-color: #81918E; */
-  background-image: url('../js/sonicbackground.png');
-  /* background-image: url("../../images/banner.jpg"); */
-  overflow-y: auto;
+  background-image: url("../../images/banner.jpg");
 }
 
 #main > section.two {
@@ -2108,6 +2107,7 @@ button:active,
   /* Header */
   #header {
     width: 300px;
+    overflow: hidden;
   }
   /* Footer */
   #footer {
@@ -2124,6 +2124,8 @@ button:active,
   /* Main */
   #main #canvas {
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
   }
@@ -2341,7 +2343,15 @@ button:active,
 }
 
 /* Mobile */
-
+#canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #788b9e61; */
+  opacity: 0.3;
+}
 
 @media screen and (max-width: 736px) {
   /* Basic */
