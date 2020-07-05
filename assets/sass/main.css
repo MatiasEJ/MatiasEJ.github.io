@@ -2400,7 +2400,7 @@ button:active,
 }
 
 .listiti ul li {
-  text-align: left;
-  list-style-type: square;
+  text-align: right;
+  list-style-type: none;
 }
 /*# sourceMappingURL=main.css.map */
